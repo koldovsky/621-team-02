@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Running Club Website</title>
 </head>
 
@@ -43,7 +47,7 @@
                 </h1>
                 <p>RunnerZ Running Club</p>
                 <div class="buttons">
-                    <a href="#contacts" class="button">BECOME A MEMBER</a>
+                    <a href="#contacts" class="button">BECOME A MEMBER</a> <!--wrapp tag 'a' to 'div' with class name 'button'/ just becouse you need to do block with border/ in other case you can't do this resently-->
                     <a href="#events" class="button">OUR EVENTS</a>
                 </div>
             </div>
@@ -86,6 +90,33 @@
             </a>
         </div>
     </section>
+
+    <section class="section">
+        <div class="container_2">
+            <div class="picture-description-block">
+                <img src="./img/jumping_men.jpg" alt="Jumping men with mountains on background">
+            </div>
+            <div class="description-about-us">
+                <h2>About us</h2>
+                <div class="description-text-block">
+                    <p class="container_2-text">Established in 2015, Runnerz is a global non-profit organization founded by pioneer runner Mark Kelz. We use running as a vehicle to empower and unite people through the creation of local running clubs, education programs, communication platforms, and social running events.</p>
+                    <p class="container_2-text">We aim to break down the barriers of geography and create a global community for runners of all abilities to support, encourage, and inspire each other towards a positive sense of self and fearlessness. RunnerZ can be found currently in 5 states and there will be more soon.</p>
+                    <div class="social-icons_btn_2">
+                    <a class="icon_pic" href="https://facebook.com/">
+                        <img src="img/fb-icon.svg" width="40" alt="Facebook Icon">
+                    </a>
+                    <a class="icon_pic"href="https://www.instagram.com/">
+                        <img src="img/inst-icon.svg" width="40" alt="Instagram Icon">
+                    </a>
+                    <a class="icon_pic"href="https://www.youtube.com/">
+                        <img src="img/youtube-icon.svg" width="40" alt="Youtube Icon">
+                    </a>
+                    </div>
+                </div>
+                    <p><a class="detail_link" href="#">LEARN MORE</a> </p>
+            </div>
+        </div>
+    </section><!--end of section_2-->
     <section class="events">
         <h2>UPCOMING EVENTS</h2>
         <div class="upcoming-events-1">
@@ -192,6 +223,18 @@
         </div>
     </section>
 
+    <section class="section_6">
+        <div class="container_6">
+            <h2>JOIN RUNNERS TODAY!</h2>
+            <span>Dedicated to providing quality resources for running clubs, events, and coaches.</span>
+            <div class="buttons">
+                <a href="#contacts" class="button" >join now!</a>
+                <a href="#info" class="button">learn more</a>
+            </div>
+        </div>
+    </section>
+
+
     <section class="past-results">
         <h2>PAST RESULTS</h2>
         <div class="past-results-1">
@@ -246,6 +289,36 @@
         </div>
     </section>
 
+    <section class="section-10">
+        <div class="container_10">
+            <h2>TESTIMONIALS</h2>
+            <div class="testimonials-block">
+                <div class="arrow left">
+                    <svg class="arrow-svg_1j4" viewBox="0 0 30 30"><defs><path d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z" id="a-1628006307845"></path></defs><use fill-rule="nonzero" opacity=".8" xlink:href="#a-1628006307845"></use></svg>
+                </div>
+                <div class="arrow right">
+                    <svg class="arrow-svg_1j4" viewBox="0 0 30 30"><defs><path d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z" id="a-1628006307845"></path></defs><use fill-rule="nonzero" opacity=".8" xlink:href="#a-1628006307845"></use></svg>
+                </div>
+                <div class="container_blocks-10">
+                    <div class="img_container-10"><img src="https://res2.weblium.site/res/5cb07832b157070023538358/5cb8189e00594200240e102c_optimized_1396_c1396x930-0x0.webp" width="320" height="214" alt="Woman with headphones ties her shoes in gym"></div>
+                    <div class="text-labels">Esther Hovard</div>
+                </div>
+                <div class="container_blocks-10">
+                    <div class="img_container-10"><img src="https://res2.weblium.site/res/61092597f874ab00228f667c/610973497d97360021b76507_optimized_1395.webp"  width="320" height="214" alt="Man running with the high knees"></div>
+                    <div class="text-labels">Jacob Jones</div>
+                </div>
+                <div class="container_blocks-10">
+                    <div class="img_container-10"><img src="https://res2.weblium.site/res/5cb07832b157070023538358/5cb0a38fe6ac630023c15d3a_optimized_1920_c1072x804-795x84.webp"  width="320" height="214" alt="Two people running through a bridge"></div>
+                    <div class="text-labels">Bob & Anna Lopez</div>
+                </div>
+                <div class="container_blocks-10">
+                    <div class="img_container-10"><img src="https://res2.weblium.site/res/5cb07832b157070023538358/5cb82e7661983800231fbf58_optimized_963.webp" width="320" height="214" alt="Woman running with the speed of light"></div>
+                    <div class="text-labels">Ingrid Smith</div>
+                </div>   
+            </div>
+
+        </div>
+    </section>
     <section class="store">
         <h2>STORE</h2>
         <div class="store-1">
@@ -279,6 +352,19 @@
         </div>
     </section>
 
+    <section class="section">
+        <div class="container_14">
+            <div class="section-14_partnership">
+                <h2>WANT TO PARTNER WITH US?</h2>
+                <p>We are always looking to add to our team of partners and better enhance our members’ experiences with the club. If you’d like to join us in this mission, contact us today!</p>
+            </div>
+            <div class="section-14_contact-us">
+                <div class="buttons">
+                    <a href="#contacts" class="button">contact us</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="blog">
         <div class="blog-paragraph">
             <img width="400" src="img/blog-woman-photo.webp" alt="sitting-girl-in-a-hood"><br>
@@ -346,7 +432,7 @@
         
         <div class="contacts-phone">
             <label for="contacts-phone">Phone</label>
-            <input type="tel" name:
+            <input type="tel" name:>
             
         </div>
         <div class="contacts-email">
@@ -354,6 +440,68 @@
             <p>runnerz@email.com</p>
         </div>
         
+    </section>
+
+    <section class="section_19">
+        <footer>
+            <div class="container">
+                <div class="footer_block">
+                    <div class="logo">
+                    <h3>
+                        Runner
+                        <span class="letterZ">Z</span>
+                    </h3>
+                    </div>
+                    <a href="tel:+1(234)5678900"></a>
+                    <a href="mailto:runnerz@email.com"></a>
+                 </div>
+                <div class="footer_block">
+                    <span class="footer_nav">About</span>
+                    <span class="footer_nav">Our clubs</span>
+                    <span class="footer_nav">Events</span>
+                    <span class="footer_nav">Store</span>
+                    <span class="footer_nav">Sponsor&Partnership</span>
+                </div>
+                <div class="footer_block">
+                    <span class="footer_nav">Programs</span>
+                    <span class="footer_nav">Membership</span>
+                    <span class="footer_nav">Coaches</span>
+                    <span class="footer_nav">Contacts</span>
+                </div>
+                <div class="footer_block">
+                    <span class="footer_nav">Follow us</span>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/">
+                            <img src="img/fb-icon.svg" width="30" alt="Facebook Icon">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="img/inst-icon.svg" width="30" alt="Instagram Icon">
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            <img src="img/youtube-icon.svg" width="30" alt="Youtube Icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_block">
+                    <span class="footer_nav">Subscribe us to get the latest news</span>
+                    <div class="contacts-phone">
+                        <label for="contacts-email">Email</label>
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="buttons">
+                            <a href="#contacts" class="button">Subscribe</a>
+                    </div>
+                </div>
+                <div class="underline_block">
+                    <div class="undeline_text-1">
+                        <span>Created by</span>
+                    </div>
+                    <div class="undeline_text-2">
+                        <span>All right reserved</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </section>
 </body>
 
