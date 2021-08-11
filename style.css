@@ -10,7 +10,7 @@ html {
 }
 
 
-.container_2 {
+.description_container {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
@@ -65,10 +65,10 @@ p .detail_link {
     color:#27292b;
     font-weight: 600;
 }
-.section_6 {
+.slogan {
     background-color: #383737;
 }
-.container_6 {
+.slogan-container {
     max-width: 1200px;
     margin: 0 auto;
     height: 80vh;
@@ -77,25 +77,24 @@ p .detail_link {
     justify-content: center;
     align-items: center;
 }
-
-.container_6 h2 {
+.slogan-container   {
     color: #0db496;
 }
 
-.container_6 span {
+.slogan-container span {
     color: #fff;
     font-size: 1.4em;
     padding-block: 30px;
     
 }
-.container_6 .buttons {
+.slogan-container .buttons {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
 }
 
-.container_6 .button {
+.slogan-container .button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +111,7 @@ p .detail_link {
     font-weight: 600;
 
 }
-.container_6 .button:hover{
+.slogan-container .button:hover{
 	background-color: #0db496;
     color: #000;
     opacity: 70%;
@@ -132,14 +131,14 @@ i {
     transform: rotate(135deg);
 }
 
-.section-10 {
+.testimonials-section {
     background-color: #383737;
 }
-.container_10 h2 {
+.testimonials-container h2 {
     color: #0db496;
     
 }
-.container_10 {
+.testimonials-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -149,7 +148,7 @@ i {
     align-items: center;
 }
 
-.container_10 h2 {
+.testimonials-container h2 {
     padding-top:85px ;
 }
 .testimonials-block {
@@ -202,14 +201,14 @@ i {
 .testimonials-block :nth-child(4) {
     display: none;
 }
-.container_blocks-10 {
+.reviewer_block {
     margin: 0 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container_blocks-10 .text-labels {
+.reviewer_block .text-labels {
     padding-top: 20px;
     font-size: 1.4em;
     font-weight: 600;
