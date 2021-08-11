@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -213,4 +216,74 @@ i {
     font-size: 1.4em;
     font-weight: 600;
     color: #fff;
+}
+
+/*section upcoming events*/
+.upcoming-section {
+    padding: 100px 200px 100px; 
+} 
+
+.upcoming-h {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 52px;
+}
+
+.upcoming-b {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.block-event {
+  background-color: #383737;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  width: 50%;
+  padding: 60px 40px ;
+}
+
+.row {
+  margin-bottom: 20px ;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 450px;
+}
+
+.text-event {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  color: #0db496;
+}
+
+.year-text-event {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.text-event-date {
+  color: #b9b9b9;
+}
+
+.text-event-learn {
+  color: #ffffff;
+}
+
+.block-img {
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+
+.block-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.text-in-block {
+  padding: 60px 40px;
 }
