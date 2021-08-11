@@ -11,7 +11,18 @@
 html {
     scroll-behavior: smooth;
 }
-
+p {
+    font-family: 'Lato', sans-serif;
+    color: #6c757d;
+    font-size: 1rem;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #383737;
+}
 
 .description_container {
     display: flex;
@@ -39,13 +50,6 @@ html {
     word-wrap: break-word;
 }
 
-h2 {
-    font-size: 4.3em;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
-    color: #383737;
-}
 
 .container_2-text {
     font-size: 1.3em;
@@ -286,4 +290,69 @@ i {
 
 .text-in-block {
   padding: 60px 40px;
+}
+
+section.programs {
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 100%;
+    border: 90px 0 90px;
+    background-color: #f0efeb;
+}
+section.programs div.our-programs-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px 20px;
+    text-align: center;
+    
+}
+section.programs div.our-programs {
+    display: flex;
+    justify-content: center;
+    padding: 30px ;
+    
+}
+section.programs div.our-programs a {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+}
+section.programs div.our-programs h2 {
+    display: block;
+    text-align: start;
+    font-size: 1rem;
+    margin: 20px 0 20px 20px;
+}
+
+
+div.our-programs img {
+    width: 200px;
+    height: 200px; 
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin: 20px 20px 0 20px;
+    
+    
+}
+@media (min-width: 600px){
+    section.programs {
+        display: flex;
+        flex-flow: row wrap ;
+        justify-content: space-around;
+    }
+    section.programs div.our-programs-title {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 20px 20px;
+        text-align: center;
+    }
+    section.programs > div.our-programs-title > p {
+        text-align: center;   
+    }
 }
