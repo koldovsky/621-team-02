@@ -12,6 +12,126 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+   
+    scroll-behavior: smooth;
+    --light-color: #fff;
+    --accent-color: #0db496;
+    --dark-color: #383737;
+}
+
+.container {
+    max-width: 1200px;
+    margin:  auto;
+    width: 100%;
+    align-items: center;
+}
+
+header {
+  background-image: url(/img/running-men.jpg);
+  background-size: cover;
+ background-position: center;
+  min-height: 100vh;
+
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+
+h1 {
+  line-height: 1.5;
+  font-size: 38px;
+  font-family:'Oswald', sans-serif;
+  font-weight: 600;
+  color: var(--light-color);
+  letter-spacing: 0;
+}
+
+h4 {
+  line-height:1;
+  font-size:60px;
+  font-family:'Oswald', sans-serif;
+  font-weight: 700;
+  color: var(--light-color)
+}
+
+header nav {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+
+header nav .menu a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+
+.banner-text {
+  font-size: 20px;
+  color: var(--light-color);
+}
+
+.banner .buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 16.5px;
+    font-weight: 400;
+}
+
+.button-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    border: 0px;
+    margin: 10px;
+    border-radius:25px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+.button-events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    border: 1px;
+    margin: 10px;
+    border-radius:25px;
+    border-color: var(--accent-color);
+    text-decoration: none;
+    border-style: solid;
+    text-align: center;
+    background-color: transparent;
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+.button-events:hover {
+    color: var(--light-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+  }
 
 .container_2 {
     display: flex;
