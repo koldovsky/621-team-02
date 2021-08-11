@@ -11,6 +11,18 @@
 html {
     scroll-behavior: smooth;
 }
+p {
+    font-family: 'Lato', sans-serif;
+    color: #6c757d;
+    font-size: 1rem;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #383737;
+}
 
 :root {
    
@@ -133,7 +145,7 @@ header nav .menu a {
     cursor: pointer;
   }
 
-.container_2 {
+.description_container {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
@@ -159,13 +171,6 @@ header nav .menu a {
     word-wrap: break-word;
 }
 
-h2 {
-    font-size: 4.3em;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
-    color: #383737;
-}
 
 .container_2-text {
     font-size: 1.3em;
@@ -188,10 +193,10 @@ p .detail_link {
     color:#27292b;
     font-weight: 600;
 }
-.section_6 {
+.slogan {
     background-color: #383737;
 }
-.container_6 {
+.slogan-container {
     max-width: 1200px;
     margin: 0 auto;
     height: 80vh;
@@ -200,25 +205,24 @@ p .detail_link {
     justify-content: center;
     align-items: center;
 }
-
-.container_6 h2 {
+.slogan-container   {
     color: #0db496;
 }
 
-.container_6 span {
+.slogan-container span {
     color: #fff;
     font-size: 1.4em;
     padding-block: 30px;
     
 }
-.container_6 .buttons {
+.slogan-container .buttons {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
 }
 
-.container_6 .button {
+.slogan-container .button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,7 +239,7 @@ p .detail_link {
     font-weight: 600;
 
 }
-.container_6 .button:hover{
+.slogan-container .button:hover{
 	background-color: #0db496;
     color: #000;
     opacity: 70%;
@@ -255,14 +259,14 @@ i {
     transform: rotate(135deg);
 }
 
-.section-10 {
+.testimonials-section {
     background-color: #383737;
 }
-.container_10 h2 {
+.testimonials-container h2 {
     color: #0db496;
     
 }
-.container_10 {
+.testimonials-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -272,7 +276,7 @@ i {
     align-items: center;
 }
 
-.container_10 h2 {
+.testimonials-container h2 {
     padding-top:85px ;
 }
 .testimonials-block {
@@ -325,14 +329,14 @@ i {
 .testimonials-block :nth-child(4) {
     display: none;
 }
-.container_blocks-10 {
+.reviewer_block {
     margin: 0 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container_blocks-10 .text-labels {
+.reviewer_block .text-labels {
     padding-top: 20px;
     font-size: 1.4em;
     font-weight: 600;
@@ -407,4 +411,69 @@ i {
 
 .text-in-block {
   padding: 60px 40px;
+}
+
+section.programs {
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 100%;
+    border: 90px 0 90px;
+    background-color: #f0efeb;
+}
+section.programs div.our-programs-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px 20px;
+    text-align: center;
+    
+}
+section.programs div.our-programs {
+    display: flex;
+    justify-content: center;
+    padding: 30px ;
+    
+}
+section.programs div.our-programs a {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+}
+section.programs div.our-programs h2 {
+    display: block;
+    text-align: start;
+    font-size: 1rem;
+    margin: 20px 0 20px 20px;
+}
+
+
+div.our-programs img {
+    width: 200px;
+    height: 200px; 
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin: 20px 20px 0 20px;
+    
+    
+}
+@media (min-width: 600px){
+    section.programs {
+        display: flex;
+        flex-flow: row wrap ;
+        justify-content: space-around;
+    }
+    section.programs div.our-programs-title {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 20px 20px;
+        text-align: center;
+    }
+    section.programs > div.our-programs-title > p {
+        text-align: center;   
+    }
 }
