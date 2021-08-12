@@ -34,7 +34,7 @@ h2 {
 
 .container {
     max-width: 1200px;
-    margin:  auto;
+    margin: 0 auto;
     width: 100%;
     align-items: center;
 }
@@ -200,6 +200,70 @@ p .detail_link {
     font-weight: 600;
 }    
 /* end of section_2 */
+section.programs {
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 100%;
+    border: 90px 0 90px;
+    background-color: #f0efeb;
+}
+section.programs div.our-programs-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px 20px;
+    text-align: center;
+    
+}
+section.programs div.our-programs {
+    display: flex;
+    justify-content: center;
+    padding: 30px ;
+    
+}
+section.programs div.our-programs a {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+}
+section.programs div.our-programs h2 {
+    display: block;
+    text-align: start;
+    font-size: 1rem;
+    margin: 20px 0 20px 20px;
+}
+
+
+div.our-programs img {
+    width: 200px;
+    height: 200px; 
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin: 20px 20px 0 20px;
+    
+    
+}
+@media (min-width: 600px){
+    section.programs {
+        display: flex;
+        flex-flow: row wrap ;
+        justify-content: space-around;
+    }
+    section.programs div.our-programs-title {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 20px 20px;
+        text-align: center;
+    }
+    section.programs > div.our-programs-title > p {
+        text-align: center;   
+    }
+}
 .slogan {
     background-color: var(--dark-color);
 }
@@ -234,7 +298,7 @@ p .detail_link {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-color: var(--accent-color);;
+    border-color: var(--accent-color);
     border-radius: 25px ;
     border-style: solid;
     width: 147px;
@@ -250,12 +314,12 @@ p .detail_link {
     opacity: 90%;
 }
 .slogan-container .buttons :first-child:hover{
-	background-color: var(--accent-color);;
+	background-color: var(--accent-color);
     color: var(--light-color);
     opacity: 100%;
 }
 .slogan-container .buttons :last-child:hover{
-	background-color: var(--accent-color);;
+	background-color: var(--accent-color);
     color: var(--light-color);
     opacity: 100%;
 }
@@ -413,68 +477,62 @@ p .detail_link {
 .text-in-block {
   padding: 60px 40px;
 }
-
-section.programs {
-    box-sizing:border-box;
+.quiesion-section {
+    background: no-repeat url('../img/background_quetion_sector.jpg');
+    height: 318px;
+}
+.quiesion-section .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.container_partnership {
+    width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-basis: 100%;
-    border: 90px 0 90px;
-    background-color: #f0efeb;
+    align-items: center;
+    height: 196px;
 }
-section.programs div.our-programs-title {
+.container_partnership h2 {
+    padding-top: 62px;
+    font-size: 52px;
+    font-weight: 500;
+    color: var(--light-color);
+}
+.container_partnership p {
+    font-size: 21px;
+    color: var(--light-color);
+    padding: 22px;
+}
+.container_contact-us {
+    width: 40%;
+    height: 100%;
+}
+.container_contact-us .buttons {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    padding: 20px 20px;
-    text-align: center;
-    
+    padding-top: 110px;
 }
-section.programs div.our-programs {
+.container_contact-us .button {
     display: flex;
     justify-content: center;
-    padding: 30px ;
-    
+    align-items: center;
+    border-color: var(--light-color);
+    border-radius: 25px ;
+    border-style: solid;
+    width: 147px;
+    height: 48px;
+    margin: 20px;
+    background-color: var(--light-color);
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 600;
 }
-section.programs div.our-programs a {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    
-}
-section.programs div.our-programs h2 {
-    display: block;
-    text-align: start;
-    font-size: 1rem;
-    margin: 20px 0 20px 20px;
-}
-
-
-div.our-programs img {
-    width: 200px;
-    height: 200px; 
-    object-fit: cover;
-    object-position: 50% 50%;
-    margin: 20px 20px 0 20px;
-    
-    
-}
-@media (min-width: 600px){
-    section.programs {
-        display: flex;
-        flex-flow: row wrap ;
-        justify-content: space-around;
-    }
-    section.programs div.our-programs-title {
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-        padding: 20px 20px;
-        text-align: center;
-    }
-    section.programs > div.our-programs-title > p {
-        text-align: center;   
-    }
+.container_contact-us .button:hover{
+    color: var(--light-color);
+    border-color: var(--light-color);
+    opacity: 100%;
+    background-color: var(--accent-color);
 }
