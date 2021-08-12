@@ -75,26 +75,21 @@ header nav {
     flex-direction: row;
 }
 
-
 header nav .menu a {
     color: var(--light-color);
     text-decoration: none;
     font-size: 18px;
 }
-
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
- }
-
-
+}
 .banner-text {
   font-size: 20px;
   color: var(--light-color);
 }
-
 .banner .buttons {
     display: flex;
     justify-content: space-around;
@@ -106,7 +101,6 @@ header nav .menu a {
     font-size: 16.5px;
     font-weight: 400;
 }
-
 .button-member {
     display: flex;
     justify-content: center;
@@ -121,7 +115,6 @@ header nav .menu a {
     color: var(--light-color);
     cursor: pointer;
 }
-
 .button-events {
     display: flex;
     justify-content: center;
@@ -138,14 +131,13 @@ header nav .menu a {
     color: var(--light-color);
     cursor: pointer;
 }
-
 .button-events:hover {
     color: var(--light-color);
     background-color: var(--accent-color);
     cursor: pointer;
   }
-
-.description_container {
+/* start of description-section */
+.description-container {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
@@ -182,14 +174,11 @@ header nav .menu a {
     opacity: 95%;
     font-weight: 400;
 }
-
-
 .social-icons_btn_2 {
     display: flex;
     justify-content: left;
 
 }
-
 .social-icons_btn_2 .icon_pic {
     padding-inline-end: 23px;
     padding-block: 8px;
@@ -199,7 +188,8 @@ p .detail_link {
     color: var(--dark-color);
     font-weight: 600;
 }    
-/* end of section_2 */
+/* end of description-section */
+
 section.programs {
     box-sizing:border-box;
     display: flex;
@@ -236,16 +226,12 @@ section.programs div.our-programs h2 {
     font-size: 1rem;
     margin: 20px 0 20px 20px;
 }
-
-
 div.our-programs img {
     width: 200px;
     height: 200px; 
     object-fit: cover;
     object-position: 50% 50%;
-    margin: 20px 20px 0 20px;
-    
-    
+    margin: 20px 20px 0 20px;   
 }
 @media (min-width: 600px){
     section.programs {
@@ -264,6 +250,8 @@ div.our-programs img {
         text-align: center;   
     }
 }
+
+/* start of slogan section */
 .slogan {
     background-color: var(--dark-color);
 }
@@ -323,7 +311,9 @@ div.our-programs img {
     color: var(--light-color);
     opacity: 100%;
 }
-/* testimonial section  */
+/* end of slogan section */
+
+/* start of testimonial section  */
 .testimonials-section {
     background-color: #383737;
 }
@@ -370,23 +360,18 @@ div.our-programs img {
     width: 20px;
     height: auto;
 }
-
 .testimonials-block .left svg{
     transform: rotate(180deg);
 }
-
 .testimonials-block .arrow:hover{
     opacity: 1;
 }
-
 .testimonials-block .left{
     left: 0;
 }
-
 .testimonials-block .right{
     right: 0;
 }
-
 .testimonials-block :nth-child(4) {
     display: none;
 }
@@ -407,6 +392,7 @@ div.our-programs img {
     font-weight: 600;
     color: var(--light-color);
 }
+/* end of testimonial section */
 
 /*section upcoming events*/
 .upcoming-section {
@@ -418,13 +404,11 @@ div.our-programs img {
     text-align: center;
     font-size: 52px;
 }
-
 .upcoming-b {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .block-event {
   background-color: #383737;
   display: flex;
@@ -434,7 +418,6 @@ div.our-programs img {
   width: 50%;
   padding: 60px 40px ;
 }
-
 .row {
   margin-bottom: 20px ;
   display: flex;
@@ -442,46 +425,41 @@ div.our-programs img {
   width: 100%;
   height: 450px;
 }
-
 .text-event {
   font-family: 'Lato', sans-serif;
   font-size: 30px;
   color: #0db496;
 }
-
 .year-text-event {
   font-family: 'Lato', sans-serif;
   font-size: 30px;
   color: #ffffff;
 }
-
 .text-event-date {
   color: #b9b9b9;
 }
-
 .text-event-learn {
   color: #ffffff;
 }
-
 .block-img {
   position: relative;
   height: 100%;
   width: 50%;
 }
-
 .block-img img {
   height: 100%;
   width: 100%;
 }
-
 .text-in-block {
   padding: 60px 40px;
 }
-.quiesion-section {
+
+/* start question-sector */
+.question-section {
     background: no-repeat url('../img/background_quetion_sector.jpg');
     height: 318px;
 }
-.quiesion-section .container {
+.question-section .container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -536,3 +514,5 @@ div.our-programs img {
     opacity: 100%;
     background-color: var(--accent-color);
 }
+/* end of question-section */
+
