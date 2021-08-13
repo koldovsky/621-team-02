@@ -40,6 +40,12 @@ h2 {
     color: #383737;
 }
 
+h3 {
+    font-family: 'Lato', sans-serif;
+    color: var(--light-color);
+    font-size: 24px;
+}
+
 h4 {
     line-height: 1;
     font-size: 52px;
@@ -112,7 +118,7 @@ header nav .social-icons {
     display: none;
 }
 
-header nav .burger-icon input:checked~.menu {
+header nav input:checked~.menu {
     display: flex;
 }
 
@@ -219,6 +225,66 @@ p .detail_link {
 
 
 /* end of description-section */
+
+
+/* start of choose-us-section*/
+
+.choose-us {
+    background: linear-gradient(rgba(56, 55, 55, 0.9), rgba(56, 55, 55, 0.9)), url(../img/running-crew.jpg);
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.choose-us-content {
+    display: grid
+}
+
+.choose-us-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.choose-us-title h2 {
+    color: var(--accent-color);
+    font-size: 38px;
+}
+
+.choose-us-title p {
+    font-size: 20px;
+    color: #e7e7e7;
+}
+
+.choose-us-icon {
+    padding: 12px;
+}
+
+.choose-us-block {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    padding: 27px;
+    background-color: var(--dark-color);
+    margin-top: 50px;
+}
+
+.choose-us-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.choose-us-text p {
+    color: #b9b9b9;
+    margin-top: 20px;
+}
+
+
+/* end of choose-us-section*/
 
 section.programs {
     box-sizing: border-box;
