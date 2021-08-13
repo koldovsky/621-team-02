@@ -339,16 +339,75 @@ div.our-programs img {
         justify-content: space-around;
     }
     section.programs div.our-programs-title {
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-        padding: 20px 20px;
+        display: block;
+        padding: 20px;
         text-align: center;
-    }
-    section.programs>div.our-programs-title>p {
-        text-align: center;
+        margin: auto;
     }
 }
+
+@media (min-width: 1000px) {
+    section.programs {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 100px 200px 100px;
+    }
+}
+
+
+/* end of program section*/
+
+
+/* start of personal coach*/
+
+section.coaching {
+    padding: 90px 0 90px;
+}
+
+div.personal-coaching-title {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+div.personal-coaching {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+
+div.personal-coaching img {
+    width: 294px;
+    height: 400px;
+    padding: 20px 20px 5px 20px;
+    object-fit: cover;
+    object-position: 76.505% 50%;
+}
+
+div.personal-coaching figcaption {
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (min-width: 600px) {
+    section.coaching {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1000px) {
+    section.coaching {
+        padding: 100px 200px 100px;
+    }
+}
+
+
+/*end of personal coach*/
 
 
 /* start of slogan section */
