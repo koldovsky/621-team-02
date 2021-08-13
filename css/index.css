@@ -45,13 +45,12 @@ h4 {
     font-size: 60px;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    color: var(--light-color);
-    text-transform: uppercase;
+    color: var(--light-color)
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     padding: 0 24px;
     width: 100%;
     align-items: center;
@@ -112,14 +111,7 @@ header nav .menu a {
 }
 
 .picture-description-block img {
-    width: 458px;
-    height: 480px;
-}
-
-.description-text-block div {
-    font-size: 16px;
-    opacity: 96%;
-    padding: 16px 0;
+    width: 550px;
 }
 
 .description-about-us {
@@ -127,14 +119,12 @@ header nav .menu a {
     width: 50%;
     text-align: left;
     word-wrap: break-word;
-    padding-inline: 15px;
 }
 
 .description-text {
     font-size: 1.3em;
+    padding: 20px 0;
     color: var(--dark-color);
-    opacity: 95%;
-    font-weight: 400;
 }
 
 .social-icons_btn_2 {
@@ -144,7 +134,7 @@ header nav .menu a {
 
 .social-icons_btn_2 .icon_pic {
     padding-inline-end: 23px;
-    padding-block: 8px;
+    padding-block: 15px;
 }
 
 p .detail_link {
@@ -154,74 +144,7 @@ p .detail_link {
 }
 
 
-/* end of description-section */
-
-section.programs {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 100%;
-    border: 90px 0 90px;
-    background-color: #f0efeb;
-}
-
-section.programs div.our-programs-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 50px;
-    padding: 20px 20px;
-    text-align: center;
-}
-
-section.programs div.our-programs {
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-}
-
-section.programs div.our-programs a {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-}
-
-section.programs div.our-programs h2 {
-    display: block;
-    text-align: start;
-    font-size: 1rem;
-    margin: 20px 0 20px 20px;
-}
-
-div.our-programs img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    object-position: 50% 50%;
-    margin: 20px 20px 0 20px;
-}
-
-@media (min-width: 600px) {
-    section.programs {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-    }
-    section.programs div.our-programs-title {
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-        padding: 20px 20px;
-        text-align: center;
-    }
-    section.programs>div.our-programs-title>p {
-        text-align: center;
-    }
-}
-
-
-/* start of slogan section */
+/* end of section_2 */
 
 .slogan {
     background-color: var(--dark-color);
@@ -230,7 +153,7 @@ div.our-programs img {
 .slogan-container {
     max-width: 1200px;
     margin: 0 auto;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -247,10 +170,6 @@ div.our-programs img {
     padding-block: 30px;
 }
 
-.slogan-container h4 {
-    font-size: 52px;
-}
-
 .slogan-container .buttons {
     display: flex;
     justify-content: space-around;
@@ -263,10 +182,11 @@ div.our-programs img {
     justify-content: center;
     align-items: center;
     border-color: var(--accent-color);
+    ;
     border-radius: 25px;
     border-style: solid;
-    width: 147px;
-    height: 48px;
+    width: 155px;
+    height: 55px;
     margin: 20px;
     color: var(--light-color);
     text-transform: uppercase;
@@ -281,21 +201,20 @@ div.our-programs img {
 
 .slogan-container .buttons :first-child:hover {
     background-color: var(--accent-color);
+    ;
     color: var(--light-color);
     opacity: 100%;
 }
 
 .slogan-container .buttons :last-child:hover {
     background-color: var(--accent-color);
+    ;
     color: var(--light-color);
     opacity: 100%;
 }
 
 
-/* end of slogan section */
-
-
-/* start of testimonial section  */
+/* testimonial section  */
 
 .testimonials-section {
     background-color: #383737;
@@ -304,7 +223,7 @@ div.our-programs img {
 .testimonials-container {
     display: flex;
     flex-direction: column;
-    max-height: 90vh;
+    max-height: 70vh;
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
@@ -313,8 +232,8 @@ div.our-programs img {
 
 .testimonials-container h4 {
     color: var(--accent-color);
-    padding-top: 100px;
-    font-size: 52px;
+    padding-top: 60px;
+    font-size: 85px;
 }
 
 .testimonials-block {
@@ -323,8 +242,7 @@ div.our-programs img {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 40px;
 }
 
 .testimonials-block .arrow {
@@ -377,8 +295,8 @@ div.our-programs img {
 }
 
 .img_reviewer_block img {
-    height: 190px;
-    width: 300px;
+    height: 214px;
+    width: 320px;
 }
 
 .reviewer_block .text-labels {
@@ -387,9 +305,6 @@ div.our-programs img {
     font-weight: 600;
     color: var(--light-color);
 }
-
-
-/* end of testimonial section */
 
 
 /*section upcoming events*/
@@ -463,76 +378,66 @@ div.our-programs img {
     padding: 60px 40px;
 }
 
-
-/* start question-sector */
-
-.question-section {
-    background: no-repeat url('../img/background_quetion_sector.jpg');
-    height: 318px;
-}
-
-.question-section .container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.container_partnership {
-    width: 60%;
+section.programs {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 196px;
-}
-
-.container_partnership h2 {
-    padding-top: 62px;
-    font-size: 52px;
-    font-weight: 500;
-    color: var(--light-color);
-}
-
-.container_partnership p {
-    font-size: 21px;
-    color: var(--light-color);
-    padding: 22px;
-}
-
-.container_contact-us {
-    width: 40%;
-    height: 100%;
-}
-
-.container_contact-us .buttons {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    padding-top: 110px;
+    flex-basis: 100%;
+    border: 90px 0 90px;
+    background-color: #f0efeb;
 }
 
-.container_contact-us .button {
+section.programs div.our-programs-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+section.programs div.our-programs {
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-color: var(--light-color);
-    border-radius: 25px;
-    border-style: solid;
-    width: 147px;
-    height: 48px;
-    margin: 20px;
-    background-color: var(--light-color);
-    color: var(--accent-color);
-    text-transform: uppercase;
-    font-size: 1.1em;
-    font-weight: 600;
+    padding: 30px;
 }
 
-.container_contact-us .button:hover {
-    color: var(--light-color);
-    border-color: var(--light-color);
-    opacity: 100%;
-    background-color: var(--accent-color);
+section.programs div.our-programs a {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
 }
 
+section.programs div.our-programs h2 {
+    display: block;
+    text-align: start;
+    font-size: 1rem;
+    margin: 20px 0 20px 20px;
+}
 
-/* end of question-section */
+div.our-programs img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin: 20px 20px 0 20px;
+}
+
+@media (min-width: 600px) {
+    section.programs {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    section.programs div.our-programs-title {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 20px 20px;
+        text-align: center;
+    }
+    section.programs>div.our-programs-title>p {
+        text-align: center;
+    }
+}
