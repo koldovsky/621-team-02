@@ -42,10 +42,9 @@ h2 {
 
 h4 {
     line-height: 1;
-    font-size: 60px;
+    font-size: 52px;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    color: var(--light-color);
     text-transform: uppercase;
 }
 
@@ -89,12 +88,20 @@ header nav .menu a {
     padding-bottom: 110px;
 }
 
+.banner h4 {
+    font-size: 60px;
+    color: var(--light-color);
+}
+
 .banner-text {
     font-size: 20px;
     color: var(--light-color);
 }
 
-.description_container {
+
+/* start of description-section */
+
+.description-container {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
