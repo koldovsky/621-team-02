@@ -295,6 +295,15 @@ div.our-programs img {
 
 /* start of personal coach*/
 
+section.coaching h3 {
+    color: var(--dark-color);
+}
+.slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 section.coaching {
     padding: 90px 0 90px;
 }
