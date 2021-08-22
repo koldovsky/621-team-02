@@ -5,8 +5,6 @@
     flex-direction: row;
     min-height: 100vh;
     max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
     align-items: center;
     background-color: var(--light-color);
 }
@@ -17,10 +15,7 @@
     width: 50%;
 }
 
-.picture-description-block img {
-    width: 458px;
-    height: 480px;
-}
+
 
 .description-text-block div {
     font-size: 16px;
@@ -29,10 +24,8 @@
 }
 
 .description-about-us {
-    flex-direction: column;
     width: 50%;
     text-align: left;
-    word-wrap: break-word;
     padding-inline: 15px;
 }
 
