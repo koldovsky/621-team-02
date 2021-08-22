@@ -18,10 +18,12 @@
     color: var(--accent-color);
 }
 
-.slogan-container span {
+.slogan-container .slogan-span {
     color: var(--light-color);
     font-size: 1.4em;
     padding-block: 30px;
+    display: flex;
+    text-align: center;
 }
 
 .slogan-container h4 {
@@ -66,6 +68,36 @@
     background-color: var(--accent-color);
     color: var(--light-color);
     opacity: 100%;
+}
+@media screen and (max-width:560px) {
+    .slogan-container .button {
+        margin: 9px;
+    }
+}
+@media screen and (max-width:485px) {
+    .slogan-container h4 {
+        font-size: 47px;
+    }
+}
+@media screen and (max-width:443px) {
+    .slogan-container h4 {
+        font-size: 43px;
+    }
+}
+@media screen and (max-width:404px) {
+    .slogan-container h4 {
+        font-size: 43px;
+        display: flex;
+        text-align: center;
+    }
+}
+@media screen and (max-width:391px) {
+    .slogan-container .buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 
