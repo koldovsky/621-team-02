@@ -5,8 +5,6 @@
     flex-direction: row;
     min-height: 100vh;
     max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
     align-items: center;
     background-color: var(--light-color);
 }
@@ -18,7 +16,6 @@
 }
 
 .picture-description-block img {
-    width: 458px;
     height: 480px;
 }
 
@@ -32,7 +29,6 @@
     flex-direction: column;
     width: 50%;
     text-align: left;
-    word-wrap: break-word;
     padding-inline: 15px;
 }
 
@@ -52,6 +48,9 @@
     padding-inline-end: 23px;
     padding-block: 8px;
 }
+.social-icons_btn_2 .icon_pic img {
+    height: 40px;
+}
 
 p .detail_link {
     text-decoration: none;
@@ -59,5 +58,87 @@ p .detail_link {
     font-weight: 600;
 }
 
-
+@media screen and (max-width:930px) {
+    .description-text {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width:904px) {
+    .description-text {
+        font-size: 1.2em;
+    }
+    .description-about-us {
+        padding-left: 33px;
+    }
+    .description-text-block div {
+        padding: 10px 0;
+    }
+    .picture-description-block img {
+        height: 450px;
+    }
+    .social-icons_btn_2 .icon_pic img {
+        height: 35px;
+    }
+    .social-icons_btn_2 .icon_pic {
+        padding-inline-end: 15px;
+    }
+}
+@media screen and (max-width:767px){
+    .description-text {
+        font-size: 1.1em;
+    }
+    .description-about-us {
+        padding-left: 57px;
+    }
+    .description-about-us h4 {
+        font-size: 49px;
+    }
+    .social-icons_btn_2 .icon_pic img {
+        height: 30px;
+    }
+    .picture-description-block img {
+        height: 430px;
+    }
+}
+@media screen and (max-width:724px) {
+    .description-container {
+        flex-direction: column;
+    }
+    .picture-description-block {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .description-about-us {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        padding-inline: 15px;
+    }
+    .picture-description-block img {
+        height: 100%;
+        width:100%;
+    }
+    .description-text {
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width:520px) {
+    .description-text {
+        font-size: 1.2em;
+    }
+    .description-about-us h4 {
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:400px) {
+    .description-text {
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width:340px) {
+    .description-text {
+        font-size: 1.1em;
+    }
+}
 /* end of description-section */
