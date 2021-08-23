@@ -53,7 +53,7 @@ function nextSlide() {
 
 function previousSlide() {
     currentSlideIdxStore--;
-    if (currentSlideIdxStore <= 0) currentSlideIdxStore = StorePhoto[StorePhoto.length-1];
+    if (currentSlideIdxStore <= 0) currentSlideIdxStore = [StorePhoto.length-1];
     showCurrentSlide();
 }
 
