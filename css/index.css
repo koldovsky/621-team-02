@@ -589,3 +589,19 @@ div.personal-coaching figcaption {
 }
 
 /*end section store*/
+
+/* section map */
+
+.our-clubs {
+    padding: 100px 0px 120px;
+}
+
+.our-clubs-h{
+    margin: 20px 0px 20px;
+}
+
+.map {
+    text-align: center;
+}
+
+/*end section map*/
