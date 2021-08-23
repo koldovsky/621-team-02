@@ -95,7 +95,13 @@ header nav .menu a {
     font-size: 18px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    margin: 12.5px 15px;
 }
+
+header nav .social-icons a {
+    margin: 6px 6px;
+}
+
 
 .burger-icon {
     font-size: 30px;
@@ -126,18 +132,23 @@ header nav input:checked~.menu {
     .burger-icon {
         display: none;
     }
+
     header nav .menu {
         display: flex;
+
     }
+
     header nav .social-icons {
         display: flex;
     }
+
 }
 
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     padding-top: 110px;
     padding-bottom: 110px;
@@ -146,9 +157,11 @@ header nav input:checked~.menu {
 .banner h4 {
     font-size: 60px;
     color: var(--light-color);
-    display: flex;
+    display: block;
+
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 
 .banner-text {

@@ -11,6 +11,11 @@
     margin-top: 35px;
 }
 
+@media (min-width: 780px) {
+    .banner .buttons { 
+        flex-direction: row;
+    }
+}
 .button-member {
     display: inline-block;
     padding: 16px 28px;
