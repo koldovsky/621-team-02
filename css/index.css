@@ -15,11 +15,12 @@ html {
     --light-color: #fff;
     --accent-color: #0db496;
     --dark-color: #383737;
+    --light-grey:rgb(118, 118, 118);
 }
 
 p {
     font-family: 'Lato', sans-serif;
-    color: #6c757d;
+    color: var(--light-grey);
     font-size: 1rem;
 }
 

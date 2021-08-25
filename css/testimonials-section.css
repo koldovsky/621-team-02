@@ -4,31 +4,8 @@
     background-color: #383737;
 }
 
-.testimonials-container {
-    display: flex;
-    flex-direction: column;
-    max-height: 90vh;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    align-items: center;
-}
 
-.testimonials-container h4 {
-    color: var(--accent-color);
-    padding-top: 100px;
-    font-size: 52px;
-}
 
-.testimonials-block {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 
 .testimonials-block .arrow {
     width: 32px;
@@ -53,6 +30,7 @@
 
 .testimonials-block .left svg {
     transform: rotate(180deg);
+
 }
 
 .testimonials-block .arrow:hover {
@@ -71,25 +49,68 @@
     display: none;
 }
 
-.reviewer_block {
-    margin: 0 15px;
+
+ .stick-gots {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 270px;
+    flex-direction: row;
+    padding-top: 25px;
+    margin-bottom: 100px;
+}
+.stick-gots .element {
+    width:10px;
+    height: 10px;
+    background: var(--light-grey);
+    border-radius: 50%;
+    margin-inline: 15px;
+}
+.stick-gots .element span ::before {
+    background: var(--light-color);
+}
+@media screen and (max-width:350px) {
+    .testimonials-container {
+        display: flex;
+        flex-direction: column;
+        max-height: 90vh;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+    }
+    .testimonials-container h4 {
+        color: var(--accent-color);
+        padding-top: 100px;
+        font-size: 52px;
+    }
+    .testimonials-block {
+        position: relative;
+        margin-top: 100px;
+        
+    }
+    .containner-for-reviewer-block {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+    }
+    .reviewer_block {
+        width: 100%;
+        margin: 0 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .img_reviewer_block img {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .reviewer_block .text-labels {
+        padding-top: 20px;
+        font-size: 1.4em;
+        font-weight: 600;
+        color: var(--light-color);
+    }
 }
 
-.img_reviewer_block img {
-    height: 190px;
-    width: 300px;
-}
 
-.reviewer_block .text-labels {
-    padding-top: 20px;
-    font-size: 1.4em;
-    font-weight: 600;
-    color: var(--light-color);
-}
 
 
 /* end of testimonial section */
