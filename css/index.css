@@ -62,6 +62,7 @@ h4 {
     align-items: center;
 }
 
+
 /* start of header section*/
 
 header {
@@ -75,66 +76,121 @@ header {
     color: var(--accent-color);
 }
 
-.logo {
-    display: inline-flex;
-}
-
-header nav {
-    justify-content: space-between;
+nav {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 25px;
-    align-items: center;
 }
 
-header nav .menu a {
-    color: var(--light-color);
-    text-decoration: none;
-    font-size: 18px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    margin: 12.5px 15px;
-}
-
-header nav .social-icons a {
-    margin: 6px 6px;
-}
-
-.burger-icon {
-    font-size: 30px;
-    color: var(--light-color);
-}
-
-.burger-icon:hover {
-    cursor: pointer;
-}
-
-#burger-checkbox {
-    display: none;
-}
-
-header nav .menu {
-    display: none;
-}
-
-header nav .social-icons {
-    display: none;
-}
-
-header nav input:checked~.menu {
-    display: flex;
-}
-
-@media (min-width: 768px) {
-    .burger-icon {
+@media (max-width: 768px) {
+    nav .menu {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--accent-color);
+        transition: top 1s ease;
         display: none;
     }
-    header nav .menu {
-        display: flex;
+    header nav .menu a {
+        color: var(--light-color);
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        margin: 12.5px 15px;
+    }
+    header nav .menu a {
+        color: var(--light-color);
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        margin: 12.5px 15px;
     }
     header nav .social-icons {
         display: flex;
+    }
+    nav .social-icons a {
+        color: var(--light-color);
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 6px 6px;
+        box-shadow: 0 0 0 1px var(--light-color);
+    }
+    nav .social-icons a:hover {
+        background-color: var(--light-color);
+        color: var(--accent-color);
+        transition: color .2s ease-out;
+    }
+    .logo {
+        display: inline-flex;
+        z-index: 20;
+    }
+    .social-icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    header nav {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        align-items: center;
+    }
+    .logo {
+        display: inline-flex;
+    }
+    header nav .menu {
+        display: flex;
+        align-items: center;
+    }
+    header nav .menu a {
+        color: var(--light-color);
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        margin: 12.5px 15px;
+    }
+    header nav .social-icons {
+        display: flex;
+    }
+    nav .social-icons a {
+        color: var(--light-color);
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 6px 6px;
+        box-shadow: 0 0 0 1px var(--light-color);
+    }
+    nav .social-icons a:hover {
+        background-color: var(--light-color);
+        color: var(--dark-color);
+        transition: color .2s ease-out;
+    }
+    nav .openMenu {
+        display: none;
+    }
+    nav .menu .closeMenu {
+        display: none;
     }
 }
 
@@ -149,12 +205,15 @@ header nav input:checked~.menu {
 }
 
 .banner h4 {
-    font-size: 60px;
+    font-size: 92px;
     color: var(--light-color);
     display: block;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
+}
+
+@media (max-width: 768px) {
+    .banner h4 {
+        font-size: 60px;
+    }
 }
 
 .banner-text {
@@ -164,7 +223,23 @@ header nav input:checked~.menu {
     font-weight: 400;
 }
 
+@media (min-width: 768px) {
+    .banner {
+        padding-top: 175px;
+        padding-bottom: 175px;
+    }
+}
+
+@media (min-width: 992px) {
+    .banner {
+        padding-top: 240px;
+        padding-bottom: 240px;
+    }
+}
+
+
 /* end of header section*/
+
 
 /* start of choose-us-section*/
 
@@ -177,6 +252,16 @@ header nav input:checked~.menu {
 
 .choose-us-content {
     display: grid
+}
+
+@media (min-width: 768px) {
+    .choose-us-content {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+    }
+    .choose-us-text p {
+        margin-top: 15px;
+    }
 }
 
 .choose-us-title {
@@ -206,14 +291,13 @@ header nav input:checked~.menu {
     align-content: flex-start;
     padding: 27px;
     background-color: var(--dark-color);
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .choose-us-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
     margin-left: 20px;
 }
 
@@ -221,6 +305,7 @@ header nav input:checked~.menu {
     color: #b9b9b9;
     margin-top: 20px;
 }
+
 
 /* end of choose-us-section*/
 
@@ -293,7 +378,9 @@ div.our-programs img {
     }
 }
 
+
 /* end of program section*/
+
 
 /* start of personal coach*/
 
@@ -353,9 +440,12 @@ div.personal-coaching figcaption {
     }
 }
 
+
 /*end of personal coach*/
 
+
 /*section upcoming events*/
+
 
 /* 
 @media (max-width: 600px) {
@@ -385,7 +475,9 @@ div.personal-coaching figcaption {
     align-items: center;
 }
 
-.upcoming-h, .past-result-h, .store-h {
+.upcoming-h,
+.past-result-h,
+.store-h {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     font-size: 52px;
@@ -457,7 +549,8 @@ div.personal-coaching figcaption {
     text-align: center;
 }
 
-.button-block, .store-shop-more {
+.button-block,
+.store-shop-more {
     position: relative;
     justify-content: center;
     align-items: center;
@@ -469,15 +562,19 @@ div.personal-coaching figcaption {
     padding: 10px 20px 10px 20px;
 }
 
-.button-block:hover, .store-shop-more:hover {
+.button-block:hover,
+.store-shop-more:hover {
     color: #ffffff;
     background-color: var(--accent-color);
     cursor: pointer;
 }
 
+
 /*end section upcoming events*/
 
+
 /*section past*/
+
 
 /* @media (min-width: 600px) {
     section.coaching {
@@ -547,7 +644,9 @@ div.personal-coaching figcaption {
     color: #383737;
 }
 
+
 /*end section past*/
+
 
 /* section store */
 
@@ -564,7 +663,8 @@ div.personal-coaching figcaption {
     width: 70%;
 }
 
-.next-photo, .previous-photo {
+.next-photo,
+.previous-photo {
     cursor: pointer;
     border-radius: 20%;
     font-size: 30px;
@@ -572,7 +672,8 @@ div.personal-coaching figcaption {
     border: 5px solid black;
 }
 
-.next-photo:hover, .previous-photo:hover {
+.next-photo:hover,
+.previous-photo:hover {
     border: 5px solid royalblue;
 }
 
@@ -594,7 +695,9 @@ div.personal-coaching figcaption {
     text-align: center;
 }
 
+
 /*end section store*/
+
 
 /* section map */
 
@@ -610,7 +713,9 @@ div.personal-coaching figcaption {
     text-align: center;
 }
 
+
 /*end section map*/
+
 
 /* section membership */
 
@@ -684,7 +789,4 @@ div.membership .become-member-button:hover {
 
 section.membership-title .membership {
     padding: 0 25px;
-}
-
-
 }
