@@ -1,0 +1,23 @@
+@media(max-width: 768px) {
+    nav .openMenu {
+        display: flex;
+        align-items: center;
+        right: 30px;
+        font-size: 2rem;
+        color: var(--light-color);
+    }
+    nav .openMenu:hover {
+        cursor: pointer;
+    }
+    nav .menu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 2rem;
+        color: var(--light-color);
+    }
+    nav .menu .closeMenu:hover {
+        cursor: pointer;
+    }
+}

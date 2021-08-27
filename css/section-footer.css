@@ -1,0 +1,103 @@
+footer {
+    background-color: var(--dark-color);
+}
+.footers_container {
+    margin: 0 auto;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer_info-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.footer_block {
+    width: 20%;
+    height: 210px;
+    flex-direction: column;
+}
+.footer_block .footer_nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 13px;
+    font-size: 20px;
+    color: var(--light-grey);
+    text-align: start;
+}
+.footer_block2 {
+    width: 20%;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+}
+.footer_block2 .footer_nav  {
+    
+    align-items: center;
+    padding: 13px;
+    font-size: 20px;
+    color: var(--light-grey);
+    text-align: start;
+}
+.footer_nav--follow {
+    align-items: center;
+    margin-top: 25px;
+    padding: 13px;
+    font-size: 20px;
+    color: var(--light-grey);
+    text-align: center;
+}
+.logo {
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.footer_block a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 12px;
+    margin-inline: 7px;
+}
+.footer_block >.logo > .letterZ {
+    color: var(--accent-color);
+}
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+
+}
+.footer_nav-contact {
+    flex-direction: column;
+    align-items: center;
+    margin-block: 25px;
+    padding: 13px;
+    font-size: 20px;
+    color: var(--light-grey);
+    text-align: start;
+}
+.contacts-phone {
+    padding-left: 30px;
+}
+.underline_block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    padding-top: 40px;
+}
+.undeline_text-1 {
+    width: 50%;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.undeline_text-2 {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10px;
+}
