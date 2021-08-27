@@ -623,11 +623,16 @@ section.membership-title {
     background-color: var(--accent-color);
     margin-top: 50px;
 }
-
-.membership-pic img {
-    margin: 25px 0;
+.membership-pic {
+    display: flex;
+    align-items: center;
+    margin: auto;
     width: 100%;
     height: 100%;
+}
+.membership-pic img {
+    width: 524px;
+    height: 261px;
     object-fit: cover;
     object-position: 50% 24.804%;
 }
@@ -680,11 +685,15 @@ div.membership .become-member-button:hover {
         grid-template-columns: 1fr 1fr;
         align-items: center;
     }
+    section.membership-title .membership {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 25px;
+    }
 }
 
-section.membership-title .membership {
-    padding: 0 25px;
-}
+
 
 
 }
