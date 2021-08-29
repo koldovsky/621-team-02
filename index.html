@@ -5,17 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/controls.css">
     <link rel="stylesheet" href="css/description-section.css">
     <link rel="stylesheet" href="css/slogan.css">
     <link rel="stylesheet" href="css/testimonials-section.css">
     <link rel="stylesheet" href="css/question-sector.css">
-<<<<<<< HEAD
     <link rel="stylesheet" href="css/section-footer.css">
-=======
     <link rel="stylesheet" href="css/burger.css">
->>>>>>> a47b44744f025c2304a65af30eab2c7b2773eb1d
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -658,7 +656,38 @@
             </div>
         </footer>
     </section>
+    <section class="loader-wrapper">
+        <div class="loading">
+            <div class="loader-blocks" style="--i:1"></div>
+            <div class="loader-blocks" style="--i:2"></div>
+            <div class="loader-blocks" style="--i:3"></div>
+            <div class="loader-blocks" style="--i:4"></div>
+            <div class="loader-blocks" style="--i:5"></div>
+            <div class="loader-blocks" style="--i:6"></div>
+            <div class="loader-blocks" style="--i:7"></div>
+            <div class="loader-blocks" style="--i:8"></div>
+            <div class="loader-blocks" style="--i:9"></div>
+            <div class="loader-blocks" style="--i:10"></div>
+            <div class="loader-blocks" style="--i:11"></div>
+            <div class="loader-blocks" style="--i:12"></div>
+            <div class="loader-blocks" style="--i:13"></div>
+            <div class="loader-blocks" style="--i:14"></div>
+            <div class="loader-blocks" style="--i:15"></div>
+            <div class="loader-blocks" style="--i:16"></div>
+            <div class="loader-blocks" style="--i:17"></div>
+            <div class="loader-blocks" style="--i:18"></div>
+            <div class="loader-blocks" style="--i:19"></div>
+            <div class="loader-blocks" style="--i:20"></div>
+            <h5>Loading...</h5>
+        </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader-wrapper').fadeToggle();
+        }, 1500);
+    </script>
     <script src="js/carousel-couches.js"></script>
     <script src="js/testemonials-slider.js"></script>
     <script src="js/index.js"></script>
