@@ -45,11 +45,18 @@
     justify-content: left;
 }
 
-.social-icons_btn_2 .icon_pic {
-    padding-inline-end: 23px;
-    padding-block: 8px;
+.social-icons_btn_2 a {
+    color: var(--dark-color);
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 6px 6px;
+        box-shadow: 0 0 0 1px var(--dark-color);
 }
-.social-icons_btn_2 .icon_pic img {
+.social-icons_btn_2 a img {
     height: 40px;
 }
 
