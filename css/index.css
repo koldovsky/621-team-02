@@ -635,15 +635,15 @@ div.personal-coaching figcaption {
 
 .store {
     padding: 20px 150px;
-}
-
-.carousel-store {
-    padding: 20px 150px;
     text-align: center;
 }
 
+.carousel-store {   
+    padding-top: 20px;
+}
+
 .store-photo {
-    width: 70%;
+    width: 60%;
 }
 
 .next-photo, .previous-photo {
@@ -685,13 +685,17 @@ div.personal-coaching figcaption {
 }
 
 .our-clubs-h {
-    margin: 20px 0px 20px;
+    margin: 20px 20px 20px;
 }
 
 .map {
+    padding: 20px;
     text-align: center;
 }
 
+.google-map{
+    width: 100%;
+}
 /*end section map*/
 
 /* section membership */
