@@ -265,7 +265,8 @@ nav {
 }
 
 .choose-us-content {
-    display: grid
+    display: grid;
+    align-items: normal;
 }
 
 @media (min-width: 768px) {
@@ -737,6 +738,12 @@ div.personal-coaching figcaption {
     display: flex;
     align-items: center;
     margin-top: 30px;
+}
+
+.partners-logo:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
 }
 
 
