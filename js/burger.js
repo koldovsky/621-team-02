@@ -26,11 +26,3 @@
     showBurgerControls();
     window.addEventListener('resize', showBurgerControls);
 })();
-
-// $(window).resize(function() {
-//     if (window.innerWidth > 768) {
-//         show();
-//     } else {
-//         close();
-//     }
-// });

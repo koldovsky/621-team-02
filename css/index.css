@@ -285,7 +285,7 @@ nav {
     text-align: center;
 }
 
-.choose-us-title h2 {
+.choose-us-title h4 {
     color: var(--accent-color);
     font-size: 38px;
 }
