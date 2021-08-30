@@ -715,22 +715,27 @@ div.personal-coaching figcaption {
 
 /* section partners */
 
+.partners-title {
+    text-align: center;
+}
+
 .partners {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 70px;
 }
 
 .partners-logos {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .partners-logo {
-    padding-left: 15px;
-    padding-right: 15px;
+    display: flex;
+    align-items: center;
     margin-top: 30px;
 }
 
