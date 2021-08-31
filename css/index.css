@@ -770,7 +770,7 @@ div.personal-coaching figcaption {
 }
 
 .google-map {
-    width: 100%;
+    max-width: 90%;
 }
 
 
