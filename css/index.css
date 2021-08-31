@@ -63,6 +63,7 @@ h4 {
     align-items: center;
 }
 
+
 /* start of header section*/
 
 header {
@@ -116,6 +117,7 @@ nav {
     }
     header nav .social-icons {
         display: flex;
+        flex-direction: row;
     }
     nav .social-icons a {
         color: var(--light-color);
@@ -154,6 +156,7 @@ nav {
     }
     .logo {
         display: inline-flex;
+        padding: 0px !important;
     }
     header nav .menu {
         display: flex;
@@ -165,10 +168,11 @@ nav {
         font-size: 18px;
         font-family: 'Lato', sans-serif;
         font-weight: 400;
-        margin: 12.5px 15px;
+        margin: 12.5px 12.5px;
     }
     header nav .social-icons {
         display: flex;
+        margin-top: 0px!important;
     }
     nav .social-icons a {
         color: var(--light-color);
@@ -178,7 +182,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 6px 6px;
+        margin: 6px 6px !important;
         box-shadow: 0 0 0 1px var(--light-color);
     }
     nav .social-icons a:hover {
@@ -216,6 +220,16 @@ nav {
     }
 }
 
+@media screen and (max-width: 960px) {
+    header nav .menu a {
+        font-size: 18px;
+        margin: 8px 8px;
+    }
+    nav .social-icons {
+        flex-direction: column;
+    }
+}
+
 .banner-text {
     font-size: 20px;
     color: var(--light-color);
@@ -237,7 +251,9 @@ nav {
     }
 }
 
+
 /* end of header section*/
+
 
 /* start of choose-us-section*/
 
@@ -249,7 +265,8 @@ nav {
 }
 
 .choose-us-content {
-    display: grid
+    display: grid;
+    align-items: normal;
 }
 
 @media (min-width: 768px) {
@@ -269,7 +286,7 @@ nav {
     text-align: center;
 }
 
-.choose-us-title h2 {
+.choose-us-title h4 {
     color: var(--accent-color);
     font-size: 38px;
 }
@@ -303,6 +320,7 @@ nav {
     color: #b9b9b9;
     margin-top: 20px;
 }
+
 
 /* end of choose-us-section*/
 
@@ -375,7 +393,9 @@ div.our-programs img {
     }
 }
 
+
 /* end of program section*/
+
 
 /* start of personal coach*/
 
@@ -435,9 +455,12 @@ div.personal-coaching figcaption {
     }
 }
 
+
 /*end of personal coach*/
 
+
 /*section upcoming events*/
+
 
 /* 
 @media (max-width: 600px) {
@@ -467,7 +490,10 @@ div.personal-coaching figcaption {
     align-items: center;
 }
 
-.upcoming-h, .past-result-h, .store-h {
+.upcoming-h,
+.past-result-h,
+.store-h,
+.our-clubs-h {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     font-size: 52px;
@@ -539,7 +565,8 @@ div.personal-coaching figcaption {
     text-align: center;
 }
 
-.button-block, .store-shop-more {
+.button-block,
+.store-shop-more {
     position: relative;
     justify-content: center;
     align-items: center;
@@ -548,18 +575,23 @@ div.personal-coaching figcaption {
     border-style: solid;
     border-width: 1px;
     border-radius: 20px;
+    margin-top: 20px;
     padding: 10px 20px 10px 20px;
 }
 
-.button-block:hover, .store-shop-more:hover {
+.button-block:hover,
+.store-shop-more:hover {
     color: #ffffff;
     background-color: var(--accent-color);
     cursor: pointer;
 }
 
+
 /*end section upcoming events*/
 
+
 /*section past*/
+
 
 /* @media (min-width: 600px) {
     section.coaching {
@@ -629,24 +661,27 @@ div.personal-coaching figcaption {
     color: #383737;
 }
 
+
 /*end section past*/
+
 
 /* section store */
 
 .store {
     padding: 20px 150px;
-}
-
-.carousel-store {
-    padding: 20px 150px;
     text-align: center;
 }
 
-.store-photo {
-    width: 70%;
+.carousel-store {
+    padding-top: 20px;
 }
 
-.next-photo, .previous-photo {
+.store-photo {
+    width: 60%;
+}
+
+.next-photo,
+.previous-photo {
     cursor: pointer;
     border-radius: 20%;
     font-size: 30px;
@@ -654,7 +689,8 @@ div.personal-coaching figcaption {
     border: 5px solid black;
 }
 
-.next-photo:hover, .previous-photo:hover {
+.next-photo:hover,
+.previous-photo:hover {
     border: 5px solid royalblue;
 }
 
@@ -676,7 +712,45 @@ div.personal-coaching figcaption {
     text-align: center;
 }
 
+
 /*end section store*/
+
+
+/* section partners */
+
+.partners-title {
+    text-align: center;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 70px;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.partners-logo {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.partners-logo:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
+}
+
+
+/* end of section partners */
+
 
 /* section map */
 
@@ -685,14 +759,21 @@ div.personal-coaching figcaption {
 }
 
 .our-clubs-h {
-    margin: 20px 0px 20px;
+    margin: 20px 20px 20px;
 }
 
 .map {
+    padding: 20px 40px;
     text-align: center;
 }
 
+.google-map {
+    width: 100%;
+}
+
+
 /*end section map*/
+
 
 /* section membership */
 
@@ -781,7 +862,9 @@ section.membership-title .membership {
     padding: 0 25px;
 }
 
+
 /*end of block*/
+
 
 /*start of block*/
 

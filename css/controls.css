@@ -12,10 +12,11 @@
 }
 
 @media (min-width: 780px) {
-    .banner .buttons { 
+    .banner .buttons {
         flex-direction: row;
     }
 }
+
 .button-member {
     display: inline-block;
     padding: 16px 28px;
@@ -50,4 +51,12 @@
     color: var(--light-color);
     background-color: var(--accent-color);
     cursor: pointer;
+    transition: color .2s ease-in, background-color .2s ease-in, border-color .2s ease-in;
+}
+
+.button-member:hover {
+    color: var(--light-color);
+    background-color: #19c4a4;
+    cursor: pointer;
+    transition: color .2s ease-in, background-color .2s ease-in;
 }

@@ -53,11 +53,11 @@ function nextSlide() {
 
 function previousSlide() {
     currentSlideIdxStore--;
-    if (currentSlideIdxStore <= 0) currentSlideIdxStore = [StorePhoto.length-1];
+    if (currentSlideIdxStore <= 0) currentSlideIdxStore = [StorePhoto.length - 1];
     showCurrentSlide();
 }
 
-//setInterval(nextSlide, 3000);
+setInterval(nextSlide, 3000);
 showCurrentSlide();
 
 document.querySelector('.next-photo').addEventListener('click', nextSlide);
