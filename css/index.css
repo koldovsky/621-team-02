@@ -566,7 +566,8 @@ div.personal-coaching figcaption {
 }
 
 .button-block,
-.store-shop-more {
+.store-shop-more,
+.p-r-button {
     position: relative;
     justify-content: center;
     align-items: center;
@@ -580,7 +581,8 @@ div.personal-coaching figcaption {
 }
 
 .button-block:hover,
-.store-shop-more:hover {
+.store-shop-more:hover,
+.p-r-button:hover {
     color: #ffffff;
     background-color: var(--accent-color);
     cursor: pointer;
@@ -625,7 +627,7 @@ div.personal-coaching figcaption {
 .p-r-all-block {
     width: 270px;
     height: 402px;
-    border: solid black;
+    border: solid #0db496;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
