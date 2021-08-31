@@ -492,7 +492,8 @@ div.personal-coaching figcaption {
 
 .upcoming-h,
 .past-result-h,
-.store-h {
+.store-h,
+.our-clubs-h {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     font-size: 52px;
@@ -574,6 +575,7 @@ div.personal-coaching figcaption {
     border-style: solid;
     border-width: 1px;
     border-radius: 20px;
+    margin-top: 20px;
     padding: 10px 20px 10px 20px;
 }
 
@@ -761,7 +763,7 @@ div.personal-coaching figcaption {
 }
 
 .map {
-    padding: 20px;
+    padding: 20px 40px;
     text-align: center;
 }
 
