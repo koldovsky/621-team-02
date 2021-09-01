@@ -18,7 +18,9 @@
     }
 
     function close() {
-        menu.style.display = 'none';
+        if (window.innerWidth < 768) {
+            menu.style.display = 'none';
+        }
     }
 
     function showBurgerControls() {
