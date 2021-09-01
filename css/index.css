@@ -115,6 +115,9 @@ nav {
         font-weight: 400;
         margin: 12.5px 15px;
     }
+    header nav .menu a:hover {
+        color: #ffffff8e;
+    }
     header nav .social-icons {
         display: flex;
         flex-direction: row;
