@@ -115,6 +115,9 @@ nav {
         font-weight: 400;
         margin: 12.5px 15px;
     }
+    header nav .menu a:hover {
+        color: #ffffff8e;
+    }
     header nav .social-icons {
         display: flex;
         flex-direction: row;
@@ -132,7 +135,7 @@ nav {
     }
     nav .social-icons a:hover {
         background-color: var(--light-color);
-        color: var(--accent-color);
+        color: var(--accent-color) !important;
         transition: color .2s ease-out;
     }
     .logo {
@@ -170,6 +173,9 @@ nav {
         font-weight: 400;
         margin: 12.5px 12.5px;
     }
+    header nav .menu a:hover {
+        color: #ffffff8e;
+    }
     header nav .social-icons {
         display: flex;
         margin-top: 0px!important;
@@ -187,7 +193,7 @@ nav {
     }
     nav .social-icons a:hover {
         background-color: var(--light-color);
-        color: var(--dark-color);
+        color: var(--dark-color) !important;
         transition: color .2s ease-out;
     }
     nav .openMenu {
@@ -566,7 +572,8 @@ div.personal-coaching figcaption {
 }
 
 .button-block,
-.store-shop-more {
+.store-shop-more,
+.p-r-button {
     position: relative;
     justify-content: center;
     align-items: center;
@@ -580,7 +587,8 @@ div.personal-coaching figcaption {
 }
 
 .button-block:hover,
-.store-shop-more:hover {
+.store-shop-more:hover,
+.p-r-button:hover {
     color: #ffffff;
     background-color: var(--accent-color);
     cursor: pointer;
@@ -625,7 +633,7 @@ div.personal-coaching figcaption {
 .p-r-all-block {
     width: 270px;
     height: 402px;
-    border: solid black;
+    border: solid #0db496;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -768,7 +776,7 @@ div.personal-coaching figcaption {
 }
 
 .google-map {
-    width: 100%;
+    max-width: 90%;
 }
 
 

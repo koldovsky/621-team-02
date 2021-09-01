@@ -45,8 +45,8 @@
     justify-content: left;
 }
 
-.social-icons_btn_2 a {
-    color: var(--dark-color);
+.social-icons_btn_2 a img {
+        color: var(--light-color);
         width: 30px;
         height: 30px;
         border-radius: 4px;
@@ -55,9 +55,11 @@
         justify-content: center;
         margin: 6px 6px;
         box-shadow: 0 0 0 1px var(--dark-color);
+        fill: currentColor;
 }
 .social-icons_btn_2 a img {
     height: 40px;
+    width: 77%;
 }
 
 p .detail_link {
@@ -65,7 +67,80 @@ p .detail_link {
     color: var(--dark-color);
     font-weight: 600;
 }
+.pop-up {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
 
+}
+.pop-up .overlay  {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(20px);
+    z-index: 1;
+}
+.pop-up-body {
+    position: relative;
+    z-index: 2;
+    min-height: 70%;
+    padding: 30px 10px;
+    background-color: var(--light-color);
+    border: 2px solid var(--dark-color);
+}
+.buttons-container .button-popup-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+}
+.buttons-container .button-popup-close a:hover {
+    background-color: var(--dark-color);
+    opacity: .7;
+    padding: 10px;
+    color: var(--light-color);
+}
+.pop-up-content {
+    background-color: var(--light-color);
+    max-width: 350px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.pop-up-title {
+    margin-top: 20px;
+    padding: 10px 10px;
+    text-align: center;
+}
+.pop-up-text {
+    padding: 10px 30px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .pop-up {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+      
+    .pop-up-content {
+        max-width: 770px;
+    }
+
+}
 @media screen and (max-width:930px) {
     .description-text {
         font-size: 1.2em;
@@ -86,9 +161,6 @@ p .detail_link {
     }
     .social-icons_btn_2 .icon_pic img {
         height: 35px;
-    }
-    .social-icons_btn_2 .icon_pic {
-        padding-inline-end: 15px;
     }
 }
 @media screen and (max-width:767px){

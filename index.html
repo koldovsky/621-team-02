@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/question-sector.css">
     <link rel="stylesheet" href="css/section-footer.css">
     <link rel="stylesheet" href="css/burger.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -24,7 +25,7 @@
     <link rel="icon" href="img/r-favicon.png">
 </head>
 
-<body>
+<body class="hidden-scroll">
     <header>
         <div class="container">
             <nav>
@@ -73,11 +74,10 @@
         </div>
 
     </header>
-    <section class="programs">
+    <section class="programs" id="programs">
         <div class="our-programs-title">
             <h2>OUR PROGRAMS</h2>
-            <p>Our programs empower and support runners at any stage. Designed to ignite passion and sustain
-                development, our deep-laid methods give you individual guidance by reference to your capabilities.</p>
+            <p>Our programs empower and support runners at any stage. Designed to ignite passion and sustain development, our deep-laid methods give you individual guidance by reference to your capabilities.</p>
         </div>
         <div class="our-programs">
             <a href="#"><img src="img/programs-indian-runners.webp" alt="young-indian-runners">
@@ -85,8 +85,7 @@
             </a>
         </div>
         <div class="our-programs">
-            <a href="#"><img src="img/programs-woman-at-the-starting-line.webp"
-                    alt="african-woman-at-the-starting-line">
+            <a href="#"><img src="img/programs-woman-at-the-starting-line.webp" alt="african-woman-at-the-starting-line">
                 <h2>RunnerZ Coaching</h2>
             </a>
         </div>
@@ -112,7 +111,7 @@
         </div>
     </section>
 
-    <section class="description">
+    <section class="description" id="about">
         <div class="description-container">
             <div class="picture-description-block">
                 <img src="img/jumping_men.jpg" alt="Jumping men with mountains on background">
@@ -138,22 +137,35 @@
                     </div>
                     <div class="social-icons_btn_2">
                         <a class="icon_pic" href="https://facebook.com/">
-                            <img src="img/fb-icon.svg" alt="Facebook Icon">
+                            <img src="https://img.icons8.com/carbon-copy/100/000000/facebook.png"/>
                         </a>
                         <a class="icon_pic" href="https://www.instagram.com/">
-                            <img src="img/inst-icon.svg" alt="Instagram Icon">
+                            <img src="https://img.icons8.com/carbon-copy/100/000000/instagram-new--v2.png"/ alt="Instagram Icon">
                         </a>
                         <a class="icon_pic" href="https://www.youtube.com/">
-                            <img src="img/youtube-icon.svg" alt="Youtube Icon">
+                            <img src="https://img.icons8.com/carbon-copy/100/000000/youtube-play.png"/>
                         </a>
                     </div>
                 </div>
                 <p><a class="detail_link" href="#">LEARN MORE</a> </p>
+                <div class="pop-up" id="pop-up">
+                    <div class="overlay"></div>
+                    <div class="pop-up-body">
+                        <div class="pop-up-content">
+                            <h2 class="pop-up-title">Who we are?</h2>
+                            <p class="pop-up-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, inventore perferendis repellat tempore exercitationem excepturi, hic nulla doloribus possimus corporis sed magnam minus. Nam, necessitatibus quod. Eligendi corrupti deserunt deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore blanditiis omnis corrupti minima incidunt totam illo, deserunt beatae tenetur dolore. Omnis minus excepturi quod dolorum impedit nesciunt nam officiis cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel odit maxime sapiente hic neque iste cupiditate, tempora excepturi, error minima molestiae. Commodi qui officiis, modi ullam odit inventore tempore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, inventore perferendis repellat tempore exercitationem excepturi, hic nulla doloribus possimus corporis sed magnam minus. Nam, necessitatibus quod. Eligendi corrupti deserunt deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore blanditiis omnis corrupti minima incidunt totam illo, deserunt beatae tenetur dolore. Omnis minus excepturi quod dolorum impedit nesciunt nam officiis cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel odit maxime sapiente hic neque iste cupiditate, tempora excepturi, error minima molestiae. Commodi qui officiis, modi ullam odit inventore tempore!</p>
+                            <div class="buttons-container">
+                                <div class="button-popup-controls popup-contact button"><a href="#contacts" class="button-member">Contact us</a></div>
+                                <div class="button-popup-close popup-close button"><a href="#">&times;</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!--end of section_2-->
-    <section class="upcoming-section">
+    <section class="upcoming-section" id="events">
         <h2 class="upcoming-h">UPCOMING EVENTS</h2>
         <div class="clock-and-time">
             <div class="clock"></div>
@@ -167,8 +179,7 @@
                     </div>
                     <div class="text-in-block">
                         <p class="text-event-date">July 14 <br> 7:30am</p>
-                        <P class="all-text-in-block"><span class="year-text-event">2018</span> <span
-                                class="text-event">Decatur<br>Dekalb 4
+                        <P class="all-text-in-block"><span class="year-text-event">2018</span> <span class="text-event">Decatur<br>Dekalb 4
                                 Miler</span>
                         </P>
                         <div class="learn-more-text">
@@ -182,8 +193,7 @@
                     </div>
                     <div class="text-in-block">
                         <p class="text-event-date">July 15-20 <br> 7:30am</p>
-                        <P class="all-text-in-block"><span class="year-text-event">2018</span><span
-                                class="text-event">RunnerZ Club
+                        <P class="all-text-in-block"><span class="year-text-event">2018</span><span class="text-event">RunnerZ Club
                                 Cross<br>Country
                                 Camp</span></P>
                         <div class="learn-more-text">
@@ -199,8 +209,7 @@
                     </div>
                     <div class="text-in-block">
                         <p class="text-event-date">August 4 <br> 7:30am</p>
-                        <P class="all-text-in-block"><span class="year-text-event">2018</span><span
-                                class="text-event">The Fan Tailgate
+                        <P class="all-text-in-block"><span class="year-text-event">2018</span><span class="text-event">The Fan Tailgate
                                 5k</span>
                         </P>
                         <div class="learn-more-text">
@@ -214,8 +223,7 @@
                     </div>
                     <div class="text-in-block">
                         <p class="text-event-date">August 11 <br> 7:30am</p>
-                        <P class="all-text-in-block"><span class="year-text-event">2018</span> <span
-                                class="text-event">Thanksgiving
+                        <P class="all-text-in-block"><span class="year-text-event">2018</span> <span class="text-event">Thanksgiving
                                 Day<br>Marathon</span></P>
                         <div class="learn-more-text">
                             <a class="text-event-learn" href="">LEARN MORE</a>
@@ -229,20 +237,19 @@
         </div>
     </section>
     <!--end of section_upcoming_events-->
-    <section class="choose-us container">
+    <section class="choose-us">
         <div class="choose-us-title">
-            <h2>WHY CHOOSE US</h2>
+            <h4>WHY CHOOSE US</h4>
             <p>What makes our program better than others?</p>
         </div>
-        <div class="choose-us-content">
+        <div class="choose-us-content container">
             <div class="choose-us-block">
                 <div class="choose-us-icon">
                     <img src="img/icon-whistle.svg" width="26" alt="icon-whistle">
                 </div>
                 <div class="choose-us-text">
                     <h3>Experience</h3>
-                    <p>We train people for 25 years now. Brick by brick, we pave the road to your stellar results. No
-                        matter how hard it gets, we are here to motivate you and advise.</p>
+                    <p>We train people for 25 years now. Brick by brick, we pave the road to your stellar results. No matter how hard it gets, we are here to motivate you and advise.</p>
                 </div>
             </div>
             <div class="choose-us-block">
@@ -269,8 +276,7 @@
                 </div>
                 <div class="choose-us-text">
                     <h3>We are everywhere</h3>
-                    <p>RunnerZ spans across the U.S. We have programs in over 40 cities, from San Diego and Portland to
-                        Philadelphia and Miami and many more.</p>
+                    <p>RunnerZ spans across the U.S. We have programs in over 40 cities, from San Diego and Portland to Philadelphia and Miami and many more.</p>
                 </div>
             </div>
             <div class="choose-us-block">
@@ -279,8 +285,7 @@
                 </div>
                 <div class="choose-us-text">
                     <h3>Awesome Shirts</h3>
-                    <p>Show off in style with our creative and smart shirt! Send the data directly to your app and let's
-                        evaluate your performance together.</p>
+                    <p>Show off in style with our creative and smart shirt! Send the data directly to your app and let's evaluate your performance together.</p>
                 </div>
             </div>
             <div class="choose-us-block">
@@ -289,8 +294,7 @@
                 </div>
                 <div class="choose-us-text">
                     <h3>Community</h3>
-                    <p>RunnerZ spans across the U.S. We have programs in over 40 cities, from San Diego and Portland to
-                        Philadelphia and Miami and many more.</p>
+                    <p>RunnerZ spans across the U.S. We have programs in over 40 cities, from San Diego and Portland to Philadelphia and Miami and many more.</p>
                 </div>
             </div>
         </div>
@@ -298,12 +302,10 @@
     </section>
 
 
-    <section class="coaching">
+    <section class="coaching" id="coach">
         <div class="personal-coaching-title">
             <h2>PERSONAL COACHING</h2>
-            <p>Learn from the best in the business with co-founder Mark Kelz and his staff of expert coaches. Using
-                their own perspectives and expertise guided by RunnerZ's proven programming, our coaching staff will
-                elevate your running or triathlon performances
+            <p>Learn from the best in the business with co-founder Mark Kelz and his staff of expert coaches. Using their own perspectives and expertise guided by RunnerZ's proven programming, our coaching staff will elevate your running or triathlon performances
                 to new heights.</p>
         </div>
         <div class="personal-coaching">
@@ -370,33 +372,33 @@
     </section>
 
 
-    <section class="gallery container">
-        <div class="gallery-title">
-            <h2>OUR GALLERY</h2>
-        </div>
-        <div class="gallery-pictures">
-            <div class="picture"><img src="img/running-girls.webp" width="350" alt="running girls">
+    <section class="gallery">
+        <div class="gallery-section container">
+            <div class="gallery-title">
+                <h4>OUR GALLERY</h4>
             </div>
-            <div class="picture"><img src="img/running-man-in-field.webp" width="350" alt="running man in field"></div>
-            <div class="picture"><img src="img/man-lacing-up.webp" width="350" alt="man lacing up sneakers"></div>
-            <div class="picture"><img src="img/sneakers-nike.webp" width="350" alt="sneakers nike">
+            <div class="big-bucket">
+                <img src="https://koldovsky.github.io/621-team-02/img/sneakers-nike.webp" alt="large" id="large-image">
             </div>
-            <div class="picture"><img src="img/women-hooks-up-number.webp" width="350" alt="women hooks up number">
+            <div class="small-thumbs">
+                <img src="img/running-girls.webp" alt="running girls">
+                <img src="img/running-man-in-field.webp" alt="running man in field">
+                <img src="img/man-lacing-up.webp" alt="man lacing up sneakers">
+                <img src="img/sneakers-nike.webp" alt="sneakers nike">
+                <img src="img/women-hooks-up-number.webp" alt="women hooks up number">
+                <img src="img/bald-man-running.webp" alt="bald man running">
             </div>
-            <div class="picture"><img src="img/bald-man-running.webp" width="350" alt="bald man running"></div>
         </div>
     </section>
 
-    <section class="membership-title">
+    <section class="membership-title" id="membership">
 
         <div class="membership-pic">
             <img src="img/membership-tittle-photo.webp" alt="running-women-with-tatto"><br>
         </div>
         <div class="membership">
             <h2>Runner<span>Z</span> Club Membership</h2>
-            <p>Join the runnerZ Club and become part of the largest running organization in the United States. With more
-                than 38,000 members and over 50 events yearly, RunnerZ Club has been empowering and engaging walkers and
-                runners of all ages and abilities
+            <p>Join the runnerZ Club and become part of the largest running organization in the United States. With more than 38,000 members and over 50 events yearly, RunnerZ Club has been empowering and engaging walkers and runners of all ages and abilities
                 since 1994.</p>
 
             <a class="become-member-button" href="#contacts">BECOME A MEMBER</a>
@@ -453,7 +455,7 @@
     </section>-->
 
 
-    <section class="store">
+    <section class="store" id="store">
         <h2 class="store-h">STORE</h2>
         <div class="carousel-store">
             <div class="slide-store"></div>
@@ -469,7 +471,7 @@
     </section>
 
 
-    <section class="partners container">
+    <section class="partners container" id="sponsor">
         <div class="partners-title">
             <h2>PARTNERS AND SPONSORS</h2>
         </div>
@@ -487,8 +489,7 @@
         <div class="container">
             <div class="container_partnership">
                 <h2>WANT TO PARTNER WITH US?</h2><br>
-                <p>We are always looking to add to our team of partners and better enhance our members’ experiences with
-                    the club. If you’d like to join us in this mission, contact us today!
+                <p>We are always looking to add to our team of partners and better enhance our members’ experiences with the club. If you’d like to join us in this mission, contact us today!
                 </p>
             </div>
             <div class="container_contact-us">
@@ -499,53 +500,50 @@
         </div>
     </section>
 
-    <section class="our-clubs">
+    <section class="our-clubs" id="clubs">
         <h2 class="our-clubs-h">Our clubs</h2>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d910.2634627615539!2d23.98846394534764!3d49.812126600941696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae79f7ab7ee7f%3A0xbeb6ae73dd7cb851!2sSoftServe%20Lviv%201!5e0!3m2!1suk!2sua!4v1629711185110!5m2!1suk!2sua"
+            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d910.2634627615539!2d23.98846394534764!3d49.812126600941696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae79f7ab7ee7f%3A0xbeb6ae73dd7cb851!2sSoftServe%20Lviv%201!5e0!3m2!1suk!2sua!4v1629711185110!5m2!1suk!2sua"
                 width="1300" height="600" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </div>
     </section>
 
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="blog-heading">
             <h2>Blog</h2>
         </div>
         <div class="blog-paragraph-conteiner">
-        <div class="blog-paragraph">
-            <img src="img/blog-woman-photo.webp" alt="sitting-girl-in-a-hood"><br>
-            <div class="blog-article">
-                <span class="blog-author-article">Creative Process | </span>
-                <span class="blog-article-date">September 29, 2018</span>
+            <div class="blog-paragraph">
+                <img src="img/blog-woman-photo.webp" alt="sitting-girl-in-a-hood"><br>
+                <div class="blog-article">
+                    <span class="blog-author-article">Creative Process | </span>
+                    <span class="blog-article-date">September 29, 2018</span>
+                </div>
+                <h3>How to Hire the Best Employees to Your Company?</h3>
+                <p>Today we’d like to introduce you to Debbie Mercer. Debbie has a lot to say about how affection with sports can win you a job!</p>
+                <a href="#">READ MORE</a>
             </div>
-            <h3>How to Hire the Best Employees to Your Company?</h3>
-            <p>Today we’d like to introduce you to Debbie Mercer. Debbie has a lot to say about how affection with
-                sports can win you a job!</p>
-            <a href="#">READ MORE</a>
-        </div>
-        <div class="blog-paragraph">
-            <img src="img/blog-girl-in-gym.webp" alt="girl-in-gym"><br>
-            <div class="blog-article">
-                <span class="blog-author-article">Creative Process | </span>
-                <span class="blog-article-date">September 26, 2018</span>
+            <div class="blog-paragraph">
+                <img src="img/blog-girl-in-gym.webp" alt="girl-in-gym"><br>
+                <div class="blog-article">
+                    <span class="blog-author-article">Creative Process | </span>
+                    <span class="blog-article-date">September 26, 2018</span>
+                </div>
+                <h3>How to Double Weight Loss Efforts in Just 15 Minutes a Day</h3>
+                <p>It’s quite normal to gain weight in winter. Colder weather makes us want to stay at home and do less calorie-burning activities.</p>
+                <a href="#">READ MORE</a>
             </div>
-            <h3>How to Double Weight Loss Efforts in Just 15 Minutes a Day</h3>
-            <p>It’s quite normal to gain weight in winter. Colder weather makes us want to stay at home and do less
-                calorie-burning activities.</p>
-            <a href="#">READ MORE</a>
-        </div>
-        <div class="blog-paragraph">
-            <img src="img/blog-strawberry.webp" alt="strawberry"><br>
-            <div class="blog-article">
-                <span class="blog-author-article">Creative Process | </span>
-                <span class="blog-article-date">September 22, 2018</span>
+            <div class="blog-paragraph">
+                <img src="img/blog-strawberry.webp" alt="strawberry"><br>
+                <div class="blog-article">
+                    <span class="blog-author-article">Creative Process | </span>
+                    <span class="blog-article-date">September 22, 2018</span>
+                </div>
+                <h3>Top 5 Easy Tips to Healthier Lifestyle</h3>
+                <p>A healthy diet can bring you better results! Get to know how to improve your results through foods that are both healthy and tasty.</p>
+                <a href="#">READ MORE</a>
             </div>
-            <h3>Top 5 Easy Tips to Healthier Lifestyle</h3>
-            <p>A healthy diet can bring you better results! Get to know how to improve your results through foods that
-                are both healthy and tasty.</p>
-            <a href="#">READ MORE</a>
-        </div>
         </div>
         <div class="blog-button">
             <a href="#" class="blog-button">LEARN MORE</a>
@@ -553,38 +551,36 @@
     </section>
     <section id="contacts">
         <div class="section-contacts">
-        <div class="contacts-title">
-            <h2>CONTACTS</h2>
-            <p>Thank you for your interest in RunnerZ. Please email or call us if you need more information. We
-                appreciate your feedback.</p>
-        
-        <div class="our-contacts">
-            <div class="contacts-address">
-                <h3>Address</h3>
-                <p>Eight Mile Hollow Rd, Clendenin,WV 25045, USA</p>
-            </div>
+            <div class="contacts-title">
+                <h2>CONTACTS</h2>
+                <p>Thank you for your interest in RunnerZ. Please email or call us if you need more information. We appreciate your feedback.</p>
 
-            <div class="section-contacts-phone">
-                <h3>Phone</h3>
-                <p>+1 (234) 567 89 00</p>
+                <div class="our-contacts">
+                    <div class="contacts-address">
+                        <h3>Address</h3>
+                        <p>Eight Mile Hollow Rd, Clendenin,WV 25045, USA</p>
+                    </div>
+
+                    <div class="section-contacts-phone">
+                        <h3>Phone</h3>
+                        <p>+1 (234) 567 89 00</p>
+                    </div>
+                    <div class="contacts-email">
+                        <h3>E-mail</h3>
+                        <p>runnerz@email.com</p>
+                    </div>
+                </div>
             </div>
-            <div class="contacts-email">
-                <h3>E-mail</h3>
-                <p>runnerz@email.com</p>
+            <div class="contacts-form">
+                <form action="#" method="post">
+                    <input type="text" placeholder="Full name*" required>
+                    <input type="tel" placeholder="Phone number*" required>
+                    <input type="email" placeholder="Your e-mail*" required>
+                    <textarea name="message" class="form-textarea" cols="30" rows="10" placeholder="Type your message" required></textarea>
+                    <input class="contacts-submit" type="submit" value="request a quote">
+                </form>
             </div>
         </div>
-        </div>
-        <div class="contacts-form">
-            <form action="#" method="post">
-                <input type="text"  placeholder="Full name*" required>
-                <input type="tel"  placeholder="Phone number*" required>
-                <input type="email" placeholder="Your e-mail*" required>
-                <textarea name="message" class="form-textarea" cols="30" rows="10" placeholder="Type your message"
-                    required></textarea>
-                <input class="contacts-submit" type="submit" value="request a quote">
-            </form>
-        </div>
-    </div>
     </section>
 
     <section class="section_footer">
@@ -598,42 +594,44 @@
                                 <span class="letterZ">Z</span>
                             </h3>
                         </div>
+                        <div class="ui-link">
                         <a href="tel:+1(234)5678900">tel:+1(234)5678900</a>
-                        <a href="mailto:runnerz@email.com">mailto:runnerz@email.com</a>
+                        </div>
+                        <div class="ui-link">
+                        <a href="mailto:runnerz@email.com">runnerz@email.com</a>
+                    </div>
                     </div>
                     <div class="footer_block">
-                        <div class="footer_nav">About</div>
-                        <div class="footer_nav">Our clubs</div>
-                        <div class="footer_nav">Events</div>
-                        <div class="footer_nav">Store</div>
-                        <div class="footer_nav">Sponsor&Partnership</div>
+                        <div class="footer_nav"><a href="#about">About</a></div>
+                        <div class="footer_nav"><a href="#clubs">Our clubs</a></div>
+                        <div class="footer_nav"><a href="#events">Events</a></div>
+                        <div class="footer_nav"><a href="#store">Store</a></div>
+                        <div class="footer_nav"><a href="#sponsor">Sponsor&Partnership</a></div>
                     </div>
                     <div class="footer_block2">
-                        <div class="footer_nav">Programs</div>
-                        <div class="footer_nav">Membership</div>
-                        <div class="footer_nav">Coaches</div>
-                        <div class="footer_nav">Contacts</div>
+                        <div class="footer_nav"><a href="#programs">Programs</a></div>
+                        <div class="footer_nav"><a href="#membership">Membership</a></div>
+                        <div class="footer_nav"><a href="#coach">Coaches</a></div>
+                        <div class="footer_nav"><a href="#contacts">Contacts</a></div>
                     </div>
                     <div class="footer_block">
                         <div class="footer_nav--follow">Follow us</div>
-                        <div class="social-icons">
-                            <a href="https://facebook.com/">
-                                <img src="img/fb-icon.svg" width="30" alt="Facebook Icon">
+                        <div class="social-icons_btn_2">
+                            <a class="icon_pic" href="https://facebook.com/">
+                                <img src="https://img.icons8.com/carbon-copy/100/000000/facebook.png"/>
                             </a>
-                            <a href="https://www.instagram.com/">
-                                <img src="img/inst-icon.svg" width="30" alt="Instagram Icon">
+                            <a class="icon_pic" href="https://www.instagram.com/">
+                                <img src="https://img.icons8.com/carbon-copy/100/000000/instagram-new--v2.png"/ alt="Instagram Icon">
                             </a>
-                            <a href="https://www.youtube.com/">
-                                <img src="img/youtube-icon.svg" width="30" alt="Youtube Icon">
+                            <a class="icon_pic" href="https://www.youtube.com/">
+                                <img src="https://img.icons8.com/carbon-copy/100/000000/youtube-play.png"/>
                             </a>
                         </div>
                     </div>
                     <div class="footer_block">
                         <div class="footer_nav-contact">Subscribe us to get the latest news</div>
                         <div class="contacts-phone">
-                            <label for="contact-email">
-                                <input type="email" placeholder="email" id="contact-email">
-                            </label>
+                            <input type="email" placeholder="email" id="contact-email">
                         </div>
                         <div class="button_footer">
                             <a href="#contacts" class="button-member">Subscribe</a>
@@ -642,7 +640,7 @@
                 </div>
                 <div class="underline_block">
                     <div class="undeline_text-1">
-                        <span>Created by</span>
+                        <span>Created by ©</span>
                     </div>
                     <div class="undeline_text-2">
                         <span>All right reserved</span>
@@ -651,7 +649,7 @@
             </div>
         </footer>
     </section>
-   <section class="loader-wrapper">
+    <section class="loader-wrapper">
         <div class="loading">
             <div class="loader-blocks" style="--i:1"></div>
             <div class="loader-blocks" style="--i:2"></div>
@@ -679,14 +677,16 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        setTimeout(function(){
+        setTimeout(function() {
             $('.loader-wrapper').fadeToggle();
         }, 1500);
     </script>
+    <script src="js/popUp.js"></script>
     <script src="js/carousel-couches.js"></script>
     <script src="js/testemonials-slider.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/burger.js"></script>-->
+    <script src="js/burger.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 
 </html>
