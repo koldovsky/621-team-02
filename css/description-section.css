@@ -45,8 +45,8 @@
     justify-content: left;
 }
 
-.social-icons_btn_2 a {
-    color: var(--dark-color);
+.social-icons_btn_2 a img {
+        color: var(--light-color);
         width: 30px;
         height: 30px;
         border-radius: 4px;
@@ -55,9 +55,11 @@
         justify-content: center;
         margin: 6px 6px;
         box-shadow: 0 0 0 1px var(--dark-color);
+        fill: currentColor;
 }
 .social-icons_btn_2 a img {
     height: 40px;
+    width: 77%;
 }
 
 p .detail_link {
@@ -86,9 +88,6 @@ p .detail_link {
     }
     .social-icons_btn_2 .icon_pic img {
         height: 35px;
-    }
-    .social-icons_btn_2 .icon_pic {
-        padding-inline-end: 15px;
     }
 }
 @media screen and (max-width:767px){
