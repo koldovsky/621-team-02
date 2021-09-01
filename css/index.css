@@ -429,10 +429,20 @@ div.personal-coaching-title {
 
 div.personal-coaching {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     background-color: white;
+}
+ .prev-coach-slide, .next-coach-slide {
+   background: transparent;
+   border: 0;
+  
+}
+
+#arrow-left, #arrow-right {
+    width: 70px;
+    height: 70px;
 }
 
 div.personal-coaching img {
