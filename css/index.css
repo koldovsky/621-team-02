@@ -193,7 +193,7 @@ nav {
     }
     nav .social-icons a:hover {
         background-color: var(--light-color);
-        color: var(--dark-color);
+        color: var(--dark-color) !important;
         transition: color .2s ease-out;
     }
     nav .openMenu {
