@@ -135,7 +135,7 @@ nav {
     }
     nav .social-icons a:hover {
         background-color: var(--light-color);
-        color: var(--accent-color);
+        color: var(--accent-color) !important;
         transition: color .2s ease-out;
     }
     .logo {
@@ -172,6 +172,9 @@ nav {
         font-family: 'Lato', sans-serif;
         font-weight: 400;
         margin: 12.5px 12.5px;
+    }
+    header nav .menu a:hover {
+        color: #ffffff8e;
     }
     header nav .social-icons {
         display: flex;
