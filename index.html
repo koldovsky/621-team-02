@@ -25,7 +25,7 @@
     <link rel="icon" href="img/r-favicon.png">
 </head>
 
-<body>
+<body class="hidden-scroll">
     <header>
         <div class="container">
             <nav>
@@ -148,6 +148,19 @@
                     </div>
                 </div>
                 <p><a class="detail_link" href="#">LEARN MORE</a> </p>
+                <div class="pop-up" id="pop-up">
+                    <div class="overlay"></div>
+                    <div class="pop-up-body">
+                        <div class="pop-up-content">
+                            <h2 class="pop-up-title">Who we are?</h2>
+                            <p class="pop-up-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, inventore perferendis repellat tempore exercitationem excepturi, hic nulla doloribus possimus corporis sed magnam minus. Nam, necessitatibus quod. Eligendi corrupti deserunt deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore blanditiis omnis corrupti minima incidunt totam illo, deserunt beatae tenetur dolore. Omnis minus excepturi quod dolorum impedit nesciunt nam officiis cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel odit maxime sapiente hic neque iste cupiditate, tempora excepturi, error minima molestiae. Commodi qui officiis, modi ullam odit inventore tempore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, inventore perferendis repellat tempore exercitationem excepturi, hic nulla doloribus possimus corporis sed magnam minus. Nam, necessitatibus quod. Eligendi corrupti deserunt deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore blanditiis omnis corrupti minima incidunt totam illo, deserunt beatae tenetur dolore. Omnis minus excepturi quod dolorum impedit nesciunt nam officiis cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel odit maxime sapiente hic neque iste cupiditate, tempora excepturi, error minima molestiae. Commodi qui officiis, modi ullam odit inventore tempore!</p>
+                            <div class="buttons-container">
+                                <div class="button-popup-controls popup-contact button"><a href="#contacts" class="button-member">Contact us</a></div>
+                                <div class="button-popup-close popup-close button"><a href="#">&times;</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -668,6 +681,7 @@
             $('.loader-wrapper').fadeToggle();
         }, 1500);
     </script>
+    <script src="js/popUp.js"></script>
     <script src="js/carousel-couches.js"></script>
     <script src="js/testemonials-slider.js"></script>
     <script src="js/index.js"></script>
